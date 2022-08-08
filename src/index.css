@@ -1,13 +1,236 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+:root{
+  font-family: 'Signika Negative', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NAVBAR */
+nav {
+  background: lightblue;
+  padding: 1.25rem 2rem;
+  border-radius: 12px;
+}
+.nav-title{
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.offered-products{
+  text-decoration: none;
+}
+
+.nav-center {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h3 {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 25px;
+}
+.nav-container {
+  display: block;
+  position: relative;
+}
+nav svg {
+  width: 40px;
+  color: var(--clr-white);
+}
+.amount-container {
+  position: absolute;
+  top: -0.6rem;
+  right: -0.6rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========HOME PAGE================= */
+
+.home-page-title{
+  text-align: center;
+}
+.home-img-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========CartItem=================== */
+
+.cartItem-img{
+  width: 200px;
+  height: 200px;
+}
+
+.amount-btn {
+  width: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.amount-btn svg {
+  color: var(--clr-primary);
+}
+.amount-btn:hover svg {
+  color: var(--clr-primary-light);
+}
+
+.img-btn-holder{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* =================== Electronics Component ================== */
+
+.electronics-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.elect-image{
+  width: 200px;
+  height: 200px;
+}
+
+.elect-description{
+  width: 500px;
+}
+
+.card {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding:0 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* ===============================Cart Items============================= */
+
+.cart-items-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cart-items{
+  width: 400px;
+  height: 400px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.amount{
+  margin: 18px;
+}
+
+.add-to-cart-btn{
+  width: 100px;
+  height: 50px;
+  background-color: lightblue;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:hover{
+  background-color: greenyellow;
+  border: 1px solid black;
+}
+
+/* ====================Womens Clothing========================= */
+
+.wc-card{
+  width: 500px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding:0 30px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* ============================Modal============================= */
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: red;
+  width: 80vw;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.modal h4 {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.modal .clear-btn,
+.modal .confirm-btn {
+  margin-top: 1rem;
+}
+
+.clear-btn {
+  width: 100px;
+  height: 50px;
+  border-style: none;
+  background-color: rgb(242, 117, 117);
+  border-radius: 5px;
+  font-size: 20px;
+
+}
+
+.clear-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-btn{
+  width: 100px;
+  height: 50px;
+  border-style: none;
+  background-color: rgb(242, 117, 117);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.c-btn-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.remove-btn{
+  width: 90px;
+  height: 50px;
+  border-style: none;
+  background-color: rgb(242, 117, 117);
+  border-radius: 5px;
+  font-size: 20px;
 }
