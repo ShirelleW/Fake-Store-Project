@@ -3,11 +3,17 @@ import cartReducer from "./features/Cart/cartSlice"
 import modalReducer from "./features/Modal/modalSlice"
 
 
+
+
+
+
 const store = configureStore({
     reducer: {
         cart: cartReducer,
-        modal: modalReducer
+        modal: modalReducer,
     }
 })
 
-export default store; 
+
+
+export default store;

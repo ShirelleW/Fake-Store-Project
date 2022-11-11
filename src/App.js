@@ -9,7 +9,7 @@ import Cart from './components/CartContainer';
 import Modal from "./components/Modal"
 
 import { useSelector, useDispatch } from "react-redux"
-import { calculateTotals, getCartItems } from "./features/Cart/cartSlice"
+import { calculateTotals } from "./features/Cart/cartSlice"
 import { useEffect } from "react"
 
 function App() {
